@@ -105,3 +105,6 @@ Citation for the original Swin Transformer paper:
   year={2021}
 }
 
+This project uses the [Mixed Dataset (Real)](https://www.kaggle.com/datasets/maestroalert/mixed-dataset-real?select=test) available on Kaggle, contributed by [maestroalert](https://www.kaggle.com/maestroalert). 
+
+Please refer to the dataset's page for more details about its contents and usage policies.
