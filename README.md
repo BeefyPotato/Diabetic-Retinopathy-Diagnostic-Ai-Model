@@ -92,3 +92,16 @@ We evaluated the model using two types of metrics:
 3. Edit hyperparameters in `config.yaml` as needed.  
    - Set the total epochs under the `searcher` section.
 
+
+## Acknowledgments
+
+This project uses the [Swin-S Transformer](https://arxiv.org/abs/2103.14030) architecture. The pretrained model weights were obtained from [Microsoft's Swin Transformer GitHub repository](https://github.com/microsoft/Swin-Transformer).
+
+Citation for the original Swin Transformer paper:
+@article{liu2021swin,
+  title={Swin Transformer: Hierarchical Vision Transformer using Shifted Windows},
+  author={Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
+  journal={arXiv preprint arXiv:2103.14030},
+  year={2021}
+}
+
