@@ -1,0 +1,34 @@
+
+# Use the NVIDIA CUDA 12.4 base image with Ubuntu 20.04
+FROM nvidia/cuda:12.4.0-base-ubuntu20.04
+
+# Set environment variables to prevent interactive prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    python3-dev \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip to the latest version
+RUN pip3 install --upgrade pip
+
+# Install Python packages required for your experiments
+RUN pip3 install torch torchvision timm numpy determined
+
+# (Optional) Install any additional Python packages you might need
+# RUN pip3 install <additional-packages>
+
+# Set the working directory inside the container
+WORKDIR /opt/diabetic_ai
+
+# Copy your experiment code into the container
+COPY . /opt/diabetic_ai
+
+# Set environment variables for Python
+ENV PYTHONPATH=/opt/diabetic_ai
+
+
+
