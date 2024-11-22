@@ -68,10 +68,7 @@ We evaluated the model using two types of metrics:
 
 ## **Results**
 ### **Training Metrics**
-- **Training Loss (Initial)**: ~1.61 (consistent with:
-  
-  $$\ln\left(\frac{1}{\text{n\_classes}}\right)$$
-).
+- **Training Loss (Initial)**: ~1.61 (consistent with expected loss of ln(out_features) = ln(5) = 1.609)
 
   
 ### **Validation Metrics (Final)**:
