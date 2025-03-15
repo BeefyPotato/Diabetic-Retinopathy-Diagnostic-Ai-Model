@@ -33,7 +33,7 @@ The Swin Transformer effectively bridges the gap between **CNNs** and **Vision T
 - **ViTs** are strong in modeling global dependencies but lack efficiency with high-resolution medical images.
   
 The **Swin Transformer’s hierarchical architecture** and **shifted window attention mechanism** address both limitations, capturing **fine-grained details** and **global patterns** efficiently.  
-- **Architecture**: Swin-B Transformer with a reinitialized final linear layer (`out_features=5`).
+- **Architecture**: Swin-S Transformer with a reinitialized final linear layer (`out_features=5`).
 - **Pretrained Weights**: Retrieved from the Swin Transformer GitHub repository.
 
 ---
